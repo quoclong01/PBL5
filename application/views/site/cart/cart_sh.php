@@ -34,7 +34,8 @@
       <a href="<?php echo base_url('cart/del'); ?>" type="button" class="btn btn-danger pull-right btn-delete"> Xóa </a>
     </div>
     <?php }else{ ?>
-    <p style="color:red;font-weight: bold;">Không có sản phẩm trong giỏ hàng</p>
+    <p style="color:red;font-weight: bold; text-align: center; padding: 10px 0; margin: 0;">Không có sản phẩm trong giỏ
+      hàng</p>
     <?php  } ?>
   </ul>
 </li>

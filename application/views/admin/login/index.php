@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<?php $this->load->view('admin/head.php'); ?>
+  <?php $this->load->view('admin/head.php'); ?>
+  <style>
+  <?php include 'index.css'?>
+  </style>
 </head>
 
 <body>
-	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading">Đăng nhập</div>
-				<div class="panel-body">
-					<form role="form" method="post">
-						<fieldset>
-							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus=""><?php echo form_error('email'); ?>
-							</div>
-							<div class="form-group">
-								<input class="form-control" placeholder="Mật khẩu" name="password" type="password" value=""><?php echo form_error('email'); ?>
-							</div>
-							<h2><?php echo form_error('login'); ?></h2>
-							<div class="checkbox">
-								<label>
-									<input name="remember" type="checkbox" value="Remember Me">Nhớ tên đăng nhập
-								</label>
-							</div>
-							<button type="submit" class="btn btn-primary">Đăng nhập</button>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div><!-- /.col-->
-	</div><!-- /.row -->	
-	<?php $this->load->view('admin/footer.php'); ?>	
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <h3 class="screen__title">ĐĂNG NHẬP</h3>
+        <form class=" login" role="form" method="post">
+          <div class="login__field">
+            <i class="login__icon fas fa-user"></i>
+            <input name="email" type="email" autofocus="" class="login__input" placeholder="User name / Email">
+            <div class="form-error">
+              <?php echo form_error('email'); ?>
+            </div>
+          </div>
+          <div class="login__field">
+            <i class="login__icon fas fa-lock"></i>
+            <input type="password" class="login__input" placeholder="Mật khẩu" name="password" type="password" value="">
+            <div class="form-error">
+              <?php echo form_error('password'); ?>
+            </div>
+          </div>
+          <div class="form-error">
+            <?php echo form_error('login'); ?>
+          </div>
+          <button class="button login__submit" type="submit">
+            <span class="button__text">Đăng nhập</span>
+            <i class='button__icon bx bxs-chevron-right'></i>
+            <svg class="button__icon glyph stroked chevron right">
+              <use xlink:href="#stroked-chevron-right" />
+            </svg>
+          </button>
+        </form>
+        <div class="social-login">
+          <h3>KAYG Store</h3>
+        </div>
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>
+    </div>
+  </div>
+  <?php $this->load->view('admin/footer.php'); ?>
 </body>
 
 </html>
