@@ -1,5 +1,5 @@
 <style>
-<?php include 'css/footer.css'?>
+<?php include 'css/styles.css'?>
 </style>
 
 <div class="row">
@@ -44,16 +44,24 @@
 
 <div class="row" id="footer">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 footer-bottom-left">
       <address>
-        <strong> Shop Quần Áo Funny</strong><br>
-        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Địa chỉ:Đại học bách khoa - Đại học Đà
-        Nẵng<br>
-        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Điện thoại: 0123456789<br>
-        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Email: funnystore@gmail.com
+        <strong id="footer-name">KAYG Store</strong>
+        <div class="footer-item">
+          <img src="<?php echo base_url(); ?>upload/icon/home-solid-24.png" alt="home">
+          <p>Địa chỉ:Đại học bách khoa - Đại học Đà Nẵng</p>
+        </div>
+        <div class="footer-item">
+          <img src="<?php echo base_url(); ?>upload/icon/phone-solid-24.png" alt="0123456789">
+          <p>Điện thoại: 0123456789</p>
+        </div>
+        <div class="footer-item">
+          <img src="<?php echo base_url(); ?>upload/icon/envelope-solid-24.png" alt="email">
+          <p>Email: funnystore@gmail.com</p>
+        </div>
       </address>
     </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+    <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
       <a href="#"><img src="<?php echo base_url(); ?>upload/icon/facebook.png" alt=""></a>
       <a href="#"><img src="<?php echo base_url(); ?>upload/icon/twitter.png" alt=""></a>
       <a href="#"><img src="<?php echo base_url(); ?>upload/icon/google.png" alt=""></a>

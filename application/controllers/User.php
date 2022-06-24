@@ -28,7 +28,7 @@ class User extends MY_Controller {
 			$this->form_validation->set_rules('name','Họ tên','required');
 			$this->form_validation->set_rules('email', 'Email đăng nhập', 'required|valid_email|callback_check_email');
 			$this->form_validation->set_rules('password','Mật khẩu','required');
-			$this->form_validation->set_rules('re_password','Mật khẩu nhập lại','matches[password]');
+			$this->form_validation->set_rules('re_password','Nhập lại mật khẩu','matches[password]');
 			$this->form_validation->set_rules('address','Địa chỉ','required');
 			$this->form_validation->set_rules('phone','Điện thoại','required');
 			if ($this->form_validation->run()) {
@@ -57,7 +57,7 @@ class User extends MY_Controller {
 		$where = array('email'=> $email);
 		if ($this->user_model->check_exists($where))
 		{
-			$this->form_validation->set_message(__FUNCTION__,'Tên đăng nhập đã tồn tại');
+			$this->form_validation->set_message(__FUNCTION__,'Email đã tồn tại');
 			return FALSE;
 		}
 		return TRUE;

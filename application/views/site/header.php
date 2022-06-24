@@ -1,6 +1,6 @@
 <div class="row" style="margin-top: 8px;height: 110px">
   <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 clearpadding"> -->
-  <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>upload/logo2.png" alt=""
+  <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>upload/logo2.jpg" alt=""
       class="img-responsive"></a>
 
   <!-- <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 clearpadding">
